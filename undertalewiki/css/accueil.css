@@ -1,0 +1,173 @@
+/* Mise en page correcte, car le footer génère des bandes blanches autour autrement (de même sur resume.css) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Eléments liés à la barre de nav */
+
+nav i.fa-home {
+  color: red;
+}
+
+nav {
+  position: fixed;
+  background-color: black;
+  z-index: 2;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.nav-content {
+  display: flex;
+  padding: 10px;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navigation li {
+  margin-right: 2vw;
+  font-size: 1.3vw;
+}
+
+img {
+  height: 2vw;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: yellow;
+}
+
+/* Pour rester dans l'esprit du jeu, j'ai téléchargé la police d'écriture utilisée dedans */
+
+@font-face {
+  font-family: "Determination";
+  src: url("../font/DTM-Mono.otf");
+}
+
+/* Contenu de la page */
+
+body {
+  margin: 0;
+  font-family: "Determination";
+  height: 230vh;
+  background-image: url("../images/surface_background.png_large");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.degrade {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 230vh;
+  width: 70vw;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.console {
+  margin: 2vw;
+  width: 10vw;
+  height: 10vw;
+  background-color: white;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.console img {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  margin-top: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage {
+  height: 30vw;
+  width: auto;
+  margin: auto;
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  color: white;
+  font-weight: lighter;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 2vw;
+  font-size: 14px;
+  margin-bottom: 3%;
+}
+
+.paragraphes {
+  margin-top: 3vw;
+}
+
+h4 {
+  color: yellow;
+  font-weight: lighter;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 2vw;
+  font-size: 22px;
+  margin-bottom: 3%;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    height: 270vw;
+  }
+
+  .degrade {
+    height: 270vw;
+  }
+  main {
+    margin: 0 auto;
+    width: 65%;
+    margin-bottom: 0;
+  }
+}
+
+/* Footer de page */
+
+footer {
+  height: 6%;
+  background-color: black;
+  text-align: center;
+}
+
+h5 {
+  color: white;
+  font-weight: lighter;
+  padding: 30px;
+}

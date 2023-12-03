@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Eléments de la barre de nav */
+
+nav i.fa-home {
+  color: red;
+}
+
+nav {
+  position: fixed;
+  background-color: black;
+  z-index: 2;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.nav-content {
+  display: flex;
+  padding: 10px;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navigation li {
+  margin-right: 2vw;
+  font-size: 1.3vw;
+}
+
+img {
+  height: 2vw;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: yellow;
+}
+
+/* Police importée */
+
+@font-face {
+  font-family: "Determination";
+  src: url("../font/DTM-Mono.otf");
+}
+
+/* Contenu page */
+
+body {
+  margin: 0;
+  font-family: "Determination";
+  background-image: url("../images/the-ruins-undertale-pixel-thumb.jpg");
+  background-size: cover;
+}
+
+main {
+  margin: 0 auto;
+  width: 65%;
+}
+
+.intro {
+  display: flex;
+  padding: 2vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vw;
+  flex-direction: column;
+}
+
+h1 {
+  padding-top: 7.5vw;
+  padding-bottom: 5.5vw;
+  color: yellow;
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 0 auto;
+}
+
+h4 {
+  padding-top: 3.5vw;
+  padding-bottom: 3.5vw;
+  color: yellow;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0 auto;
+}
+
+p {
+  color: white;
+  font-weight: lighter;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-size: 14px;
+  margin-bottom: 3%;
+}
+
+.gifannoying-dog {
+  width: 15vw;
+  height: auto;
+  margin: 1 auto;
+  display: flex;
+  padding: 5vw;
+  position: absolute;
+  /* Animation (annoying dog qui bouge de gauche à droite) qui est définie juste en dessous avec des keyframes */
+  animation: moveRight 5s linear infinite;
+  padding: 1vw;
+}
+
+/* Animation de l'annoying dog */
+@keyframes moveRight {
+  /* Position de début */
+  0% {
+    left: 20vw;
+    transform: scaleX(-1);
+  }
+  /* Position presque intermédiaire pour faire une transition rapide (inversion horizontale) */
+  49.9999% {
+    left: 60vw;
+    transform: scaleX(-1);
+  }
+  /* Position intermédiaire (à droite) */
+  50% {
+    left: 60vw;
+    transform: scaleX(0);
+  }
+  /* Position presque intermédiaire pour faire une transition rapide (inversion horizontale) */
+  50.0001% {
+    transform: scaleX(1);
+  }
+  /* Position de fin (et aussi la position du début pour faire une loop) */
+  100% {
+    left: 20vw;
+    transform: scaleX(1);
+  }
+}
+
+/* Suite du texte */
+
+.part2 {
+  margin-top: 15.5vw;
+}
+
+/* Media queries, pour adapter à une taille d'écran plus petite (mobile) */
+
+@media screen and (max-width: 767px) {
+  body {
+    background-size: 500%;
+  }
+
+  .intro {
+    margin: 0 0 0 0;
+    height: 300vw;
+  }
+}
+
+/* Footer de page */
+
+footer {
+  height: 5%;
+  background-color: black;
+  text-align: center;
+}
+
+h5 {
+  color: white;
+  font-weight: lighter;
+  padding: 30px;
+}

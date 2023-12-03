@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/personnages.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Personnages</title>
+  </head>
+  <body>
+    <!-- Barre de nav -->
+    <nav>
+      <div class="nav-content">
+        <ul class="navigation">
+          <a href="https://store.steampowered.com/app/391540/Undertale/"
+            ><li onmouseover="playHoverSound()">
+              <img src="../images/logoundertale.png" alt="Logo" /></li
+          ></a>
+          <li>
+            <a href="accueil.html" onmouseover="playHoverSound()"
+              ><i class="fas fa-home"></i
+            ></a>
+          </li>
+          <li>
+            <a href="resume.html" onmouseover="playHoverSound()">Résumé</a>
+          </li>
+          <li>
+            <a href="#" onmouseover="playHoverSound()"
+              >Personnages</a
+            >
+          </li>
+          <li>
+            <a href="zones.html" onmouseover="playHoverSound()">Zones</a>
+          </li>
+        </ul>
+
+        <audio id="hover-sound" src="../sfx/snd_select.mp3"></audio>
+      </div>
+    </nav>
+
+    <!-- Footer de page VERTICAL -->
+    <!-- (en temps normal, les conditions d'utilisation seraient cliquables) -->
+    <div class = "vertical-footer">
+      <!-- Elements du footer, vertical sur cette page -->
+      <p>Conditions générales</p>
+    </div>
+
+
+    <!-- Contenu de la page -->
+    <!-- (description de chaque personnage + sprite) -->
+    <main>
+      <div class="container">
+        <!-- Les personnages sont organisés par rangées de 3 rectangles qui permettent de les présenter brièvement -->
+        <div class="character">
+          <!-- Frisk -->
+          <div class="black-rectangle">
+            <img
+              class="char-image"
+              src="../images/sprites/frisk_sprite.webp"
+              alt="frisk"
+            />
+            <p>
+              Frisk est le protagoniste que l'on joue dans Undertale. Tombé dans
+              un souterrain plein de monstres,il se fera des amis, ou des
+              ennemis...
+            </p>
+          </div>
+          <!-- Flowey -->
+          <div class="black-rectangle">
+            <img
+              class="char-image"
+              src="../images/sprites/flowey_sprite.webp"
+              alt="flowey"
+              onclick="playFloweyClickSound()"
+            />
+            <p>
+              Flowey est une bien gentille fleur qui souhaite tout notre bien
+              (ou pas). Elle souhaite surtout s'emparer de l'âme du joueur.
+            </p>
+          </div>
+          <!-- Toriel -->
+          <div class="black-rectangle">
+            <img
+              class="char-image"
+              id="toriel"
+              src="../images/sprites/toriel_sprite.webp"
+              alt="toriel"
+            />
+            <p>
+              Il s'agit de Toriel, la gentille maman chèvre qui décide de
+              protéger Frisk, et qui veut coûte que coûte l'empêcher de risquer
+              sa vie plus loin dans l'underground.
+            </p>
+          </div>
+        </div>
+        <div class="character">
+          <!-- Napstablook -->
+          <div class="black-rectangle">
+            <img
+              class="char-image"
+              src="../images/sprites/napstablook_sprite.webp"
+              alt="napstablook"
+            />
+            <p>
+              Napstablook est un fantôme qui veut à tout prix éviter une chose :
+              être sur ton chemin. Sois donc sympa avec lui !
+            </p>
+          </div>
+          <!-- Sans -->
+          <div class="black-rectangle">
+            <img
+              class="char-image"
+              src="../images/sprites/sans_sprite.webp"
+              alt="sans"
+            />
+            <p>
+              Sans est un petit squelette très (trop) blagueur, qui ne te veut
+              pas nécessairement du mal. A condition que tu ne touches pas à
+              ceux qu'il aime, évidemment.
+            </p>
+          </div>
+          <!-- Papyrus -->
+          <div class="black-rectangle">
+            <img
+              class="char-image"
+              id="papyrus"
+              src="../images/sprites/papyrus_sprite.webp"
+              alt="papyrus"
+            />
+            <p>
+              Papyrus ! C'est le petit frère de Sans, et peut-être avec un peu
+              de chance, le futur chef de la garde royale ! Un jeune squelette
+              très inoffensif.
+            </p>
+          </div>
+        </div>
+        <div class="character">
+          <!-- Undyne -->
+          <div class="black-rectangle">
+            <img
+              class="char-image"
+              id="undyne"
+              src="../images/sprites/undyne_sprite.png"
+              alt="undyne"
+            />
+            <p>
+              Jeune femme poisson à la tête de la garde royale, Undyne est une
+              vraie guerrière dans l'âme. Elle veut tout particulièrement
+              récupérer ton âme, afin de sauver les monstres.
+            </p>
+          </div>
+          <!-- Alphys -->
+          <div class="black-rectangle">
+            <img
+              class="char-image"
+              id="alphys"
+              src="../images/sprites/alphys_sprite.webp"
+              alt="alphys"
+            />
+            <p>
+              Alphys est la scientifique royale de l'underground. En plus d'être
+              une geek, elle a su créer un corps robotique pour qu'un fantôme
+              s'y loge.
+            </p>
+          </div>
+          <!-- Mettaton -->
+          <div class="black-rectangle">
+            <img
+              class="char-image"
+              id="mettaton"
+              src="../images/sprites/mettaton_sprite.webp"
+              alt="mettaton"
+            />
+            <p>
+              Mettaton est le robot qu'a conçu Alphys. Au départ, il était
+              destiné à servir de robot tueur d'humains. Au final, il est devenu
+              la star de l'underground.
+            </p>
+          </div>
+        </div>
+        <div class="character">
+          <!-- Asgore -->
+          <div class="black-rectangle">
+            <img
+              class="char-image"
+              id="asgore"
+              src="../images/sprites/asgore_sprite.webp"
+              alt="asgore"
+            />
+            <p>
+              Asgore est non seulement le mari de Toriel, mais aussi le roi de
+              l'underground. Son objectif est de sauver son peuple, en récoltant
+              assez d'âmes humaines.
+            </p>
+          </div>
+          <!-- Asriel -->
+          <div class="black-rectangle">
+            <img
+              class="char-image"
+              src="../images/sprites/asriel_sprite.png"
+              alt="asriel"
+            />
+            <p>
+              Asriel, fils de Toriel et Asgore, il a connu la mort bien trop
+              tôt. Il revient tristement à la vie sous la forme de Flowey,
+              incapable de ressentir des émotions.
+            </p>
+          </div>
+          <div class="black-rectangle">
+            <img
+              class="char-image"
+              src="../images/sprites/chara_sprite.webp"
+              alt="chara"
+            />
+            <p>
+              Chara était l'enfant adoptif de Toriel et Asgore. Il est dit qu'il
+              haïssait l'humanité. C'était le meilleur ami d'Asriel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Fichier js + audio incorporé -->
+    <script src="../javascript/undertale.js"></script>
+    <audio id="flowey-laugh" src="../sfx/snd_floweylaugh.wav"></audio>
+  </body>
+</html>

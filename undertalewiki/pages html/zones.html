@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/zones.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Zones</title>
+  </head>
+  <body>
+    <!-- Barre de nav -->
+    <nav>
+      <div class="nav-content">
+        <ul class="navigation">
+          <a href="https://store.steampowered.com/app/391540/Undertale/"
+            ><li onmouseover="playHoverSound()">
+              <img src="../images/logoundertale.png" alt="Logo" /></li
+          ></a>
+          <li>
+            <a href="accueil.html" onmouseover="playHoverSound()"
+              ><i class="fas fa-home"></i
+            ></a>
+          </li>
+          <li>
+            <a href="resume.html" onmouseover="playHoverSound()">Résumé</a>
+          </li>
+          <li>
+            <a href="personnages.html" onmouseover="playHoverSound()"
+              >Personnages</a
+            >
+          </li>
+          <li>
+            <a href="#" onmouseover="playHoverSound()">Zones</a>
+          </li>
+        </ul>
+
+        <audio id="hover-sound" src="../sfx/snd_select.mp3"></audio>
+      </div>
+    </nav>
+    <!-- Footer de page VERTICAL -->
+    <!-- (en temps normal, les conditions d'utilisation seraient cliquables) -->
+    <div class="vertical-footer">
+      <!-- Elements du footer, vertical sur cette page -->
+      <p>Conditions générales</p>
+    </div>
+
+    <script src="../javascript/undertale.js"></script>
+    <!-- Contenu de la page -->
+    <!-- (menu scroll avec chaque zone dévoilée) -->
+    <main>
+      <!-- Chaque zone correspond à un carré qui est flouté et grisé, avec dedans une bande noire horizontale + texte -->
+      <div
+        class="zone"
+        onmouseenter="disableEffects(this)"
+        onmouseleave="enableEffects(this)"
+      >
+        <div class="transparent"></div>
+        <div class="bande-noire">
+          <div class="titre">
+            <h3>Ruins</h3>
+          </div>
+        </div>
+        <img src="../images/zones/zones_ruins.png" alt="ruins" />
+      </div>
+      <div
+        class="zone"
+        onmouseenter="disableEffects(this)"
+        onmouseleave="enableEffects(this)"
+      >
+        <div class="transparent"></div>
+        <div class="bande-noire">
+          <div class="titre">
+            <h3>Snowdin</h3>
+          </div>
+        </div>
+        <img src="../images/zones/zones_snowdin.jpg" alt="snowdin" />
+      </div>
+      <div
+        class="zone"
+        onmouseenter="disableEffects(this)"
+        onmouseleave="enableEffects(this)"
+      >
+        <div class="transparent"></div>
+        <div class="bande-noire">
+          <div class="titre">
+            <h3>Waterfall</h3>
+          </div>
+        </div>
+        <img src="../images/zones/zones_waterfall.png" alt="waterfall" />
+      </div>
+      <div
+        class="zone"
+        onmouseenter="disableEffects(this)"
+        onmouseleave="enableEffects(this)"
+      >
+        <div class="transparent"></div>
+        <div class="bande-noire">
+          <div class="titre">
+            <h3>Hotland</h3>
+          </div>
+        </div>
+        <img src="../images/zones/zones_hotland.png" alt="hotland" />
+      </div>
+      <div
+        class="zone"
+        onmouseenter="disableEffects(this)"
+        onmouseleave="enableEffects(this)"
+      >
+        <div class="transparent"></div>
+        <div class="bande-noire">
+          <div class="titre">
+            <h3>Core</h3>
+          </div>
+        </div>
+        <img src="../images/zones/zones_core.webp" alt="core" />
+      </div>
+      <div
+        class="zone"
+        onmouseenter="disableEffects(this)"
+        onmouseleave="enableEffects(this)"
+      >
+        <div class="transparent"></div>
+        <div class="bande-noire">
+          <div class="titre">
+            <h3>New Home</h3>
+          </div>
+        </div>
+        <img src="../images/zones/zones_new_home.jpg" alt="new_home" />
+      </div>
+    </main>
+  </body>
+</html>

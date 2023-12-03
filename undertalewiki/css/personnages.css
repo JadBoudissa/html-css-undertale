@@ -1,0 +1,215 @@
+body {
+  font-family: "Determination";
+  overflow-y: hidden;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 245vh;
+}
+
+main {
+  padding: 5.2vw 2vw 3vw 0vw;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 130%;
+  max-width: 5500px;
+  overflow: hidden;
+}
+
+.character {
+  margin-top: 5vw;
+  left: 7vw;
+  position: relative;
+  background: url("../images/judgement-hall.jpg") center;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 650px;
+}
+
+.black-rectangle {
+  position: relative;
+  left: 5px;
+  width: 500px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 5px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+/*  Dimensions relatives à tous les personnages sauf exceptions en dessous */
+
+.char-image {
+  height: 4vw;
+  padding: 5px;
+  margin-right: 1vw;
+}
+
+/* ID pour ajuster dans le cas où les images sont trop décalées pour certains perso */
+
+#toriel {
+  margin-left: 1vw;
+  height: 5vw;
+}
+
+#papyrus {
+  margin-left: 0.2;
+  height: 5.5vw;
+}
+
+#undyne {
+  margin-left: 1vw;
+  height: 6vw;
+}
+
+#alphys {
+  height: 7.5vw;
+  margin-left: -2.5vw;
+}
+
+#mettaton {
+  height: 5.5vw;
+  margin-left: -0.5vw;
+}
+
+#asgore {
+  height: 5.5vw;
+  margin-left: -1vw;
+}
+
+/* Paragraphes */
+
+p {
+  margin-left: 5vw;
+  margin-right: 3vw;
+  padding: 10px;
+  position: absolute;
+  font-size: 14px;
+  z-index: 0;
+  color: white;
+}
+
+/* Police importée */
+
+@font-face {
+  font-family: "Determination";
+  src: url("../font/DTM-Mono.otf");
+}
+
+/* Navbar */
+
+nav i.fa-home {
+  color: red;
+}
+
+nav {
+  position: fixed;
+  background-color: black;
+  z-index: 2;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.nav-content {
+  display: flex;
+  padding: 10px;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navigation li {
+  margin-right: 2vw;
+  font-size: 1.3vw;
+}
+
+img {
+  height: 2vw;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: yellow;
+}
+
+/* Media queries pour adapter l'affichage sur mobile */
+
+@media screen and (max-width: 767px) {
+  main {
+    padding: 10px;
+    margin-top: 220%;
+    margin-left: -90%;
+  }
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -300vw;
+    margin-left: 6vw;
+  }
+
+  .character {
+    margin-left: 15vw;
+    left: 3.5vw;
+    width: 45vh;
+    max-width: 700px;
+    height: cover;
+  }
+
+  .black-rectangle {
+    margin-left: -1vw;
+    width: 340px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+}
+
+/* Vue que la page est scrollée horizontalement, on a un footer vertical sur la gauche */
+
+.vertical-footer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.vertical-footer p {
+  margin-top: 30vh;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  color: white;
+  white-space: nowrap;
+  left: -0.5vw;
+}
