@@ -77,7 +77,7 @@ a:hover {
   width: 38vw;
   height: 38vw;
   object-fit: cover;
-
+}
 .zone {
   z-index: 1;
   position: relative;
